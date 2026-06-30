@@ -2,11 +2,13 @@
   "name": "oak-and-linen",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "16.2.9",
@@ -14,6 +16,9 @@
     "react-dom": "19.2.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.1.0",
+    "@commitlint/config-conventional": "^21.1.0",
+    "@commitlint/types": "^21.1.0",
     "@tailwindcss/postcss": "^4.3.1",
     "@types/node": "^26.0.1",
     "@types/react": "^19.2.17",
@@ -21,6 +26,8 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "gitmojis": "^3.15.0",
+    "husky": "^9.1.7",
     "tailwindcss": "^4.3.1",
     "typescript": "^6.0.3"
   }
